@@ -1,0 +1,30 @@
+from Stack import Stack
+
+
+#[()]{}{[()()]()}
+parentheses1= Stack()
+parentheses1.push("[")
+parentheses1.push("(")
+parentheses1.push(")")
+parentheses1.push("]")
+parentheses1.push("{")
+parentheses1.push("}")
+parentheses1.push("{")
+parentheses1.push("[")
+parentheses1.push("(")
+parentheses1.push(")")
+parentheses1.push("(")
+parentheses1.push(")")
+parentheses1.push("]")
+parentheses1.push("(")
+parentheses1.push(")")
+parentheses1.push("}")
+print(parentheses1.checkbalance())
+
+#[(])
+parentheses2= Stack()
+parentheses2.push("[")
+parentheses2.push("(")
+parentheses2.push("]")
+parentheses2.push(")")
+print(parentheses2.checkbalance())

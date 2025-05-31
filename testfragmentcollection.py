@@ -1,0 +1,16 @@
+from fragmentcollection import FragmentCollection
+
+fc = FragmentCollection()
+fc.add('TACG')
+fc.add('AG')
+fc.prefixCount('TA')
+fc.prefixCount('')
+fc.add('GATC')
+fc.add('TACC')
+fc.prefixCount('TA')
+fc.prefixCount('GA')
+fc.prefixCount('')
+fc.add('ATCG')
+fc.prefixCount('ATCG')
+fc.prefixCount('C')
+fc.prefixCount('A')
